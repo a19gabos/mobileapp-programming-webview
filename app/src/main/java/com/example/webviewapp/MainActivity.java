@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         WebView webView = new WebView(this);
 
         setContentView(webView);
-        webView.loadUrl("https://www.nationalww2museum.org/students-teachers/student-resources");
+        webView.loadUrl("www.nationalww2museum.org/students-teachers/student-resources");
     }
 
     @Override
