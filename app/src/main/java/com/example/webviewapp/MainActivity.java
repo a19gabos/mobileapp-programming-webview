@@ -29,10 +29,11 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-      WebView webView = new WebView(this);
-      setContentView(webView);
+        WebView webView = new WebView(this);
+        setContentView(webView);
 
-      webView.loadUrl("http://www.bbc.co.uk/history/worldwars/wwtwo/");
+        webView.loadUrl("http://www.bbc.co.uk/history/worldwars/wwtwo/");
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
