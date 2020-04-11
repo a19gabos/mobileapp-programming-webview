@@ -30,10 +30,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        WebView webView = new WebView(this);
-
-        setContentView(webView);
-        webView.loadUrl("https://www.nationalww2museum.org/students-teachers/student-resources");
+        WebView myWebView = (WebView) findViewById(R.id.webview);
+        myWebView.loadUrl("https://www.nationalww2museum.org/students-teachers/student-resources");
     }
 
     @Override
