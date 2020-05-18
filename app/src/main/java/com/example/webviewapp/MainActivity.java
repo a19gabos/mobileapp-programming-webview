@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.action_internal_web) {
             showInternalWebPage();
-
+            file:///android_asset/about.html
 
             Log.d("==>","Will display internal web page");
             return true;
