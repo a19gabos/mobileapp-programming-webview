@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.loadUrl("https://www.nationalww2museum.org/students-teachers/student-resources");
         WebSettings webSettings = myWebView.getSettings();
-        WebView.getSettings().setJavaScriptEnabled(true);
+        myWebView.getSettings().setJavaScriptEnabled(true);
     }
 
     @Override
