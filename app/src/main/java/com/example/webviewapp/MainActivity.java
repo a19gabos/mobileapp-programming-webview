@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_external_web) {
             showExternalWebPage();
+            WebView myWebView = (WebView) findViewById(R.id.webview);
+            myWebView.loadUrl("https://twitter.com/home");
+            WebSettings webSettings = myWebView.getSettings();
 
             Log.d("==>","Will display external web page");
             return true;
@@ -62,9 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.action_internal_web) {
             showInternalWebPage();
-            WebView myWebView = (WebView) findViewById(R.id.webview);
-            myWebView.loadUrl("https://twitter.com/home");
-            WebSettings webSettings = myWebView.getSettings();
+
 
             Log.d("==>","Will display internal web page");
             return true;
