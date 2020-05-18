@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void showExternalWebPage(){
         // TODO: Add your code for showing external web page here
+
     }
 
     public void showInternalWebPage(){
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.loadUrl("https://www.nationalww2museum.org/students-teachers/student-resources");
+        WebView.getSettings().setJavaScriptEnabled(true);
     }
 
     @Override
