@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.loadUrl("https://www.nationalww2museum.org/students-teachers/student-resources");
+        WebSettings webSettings = myWebView.getSettings();
         WebView.getSettings().setJavaScriptEnabled(true);
     }
 
