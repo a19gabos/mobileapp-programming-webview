@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_external_web) {
             showExternalWebPage();
             WebView myWebView = (WebView) findViewById(R.id.webview);
-            myWebView.loadUrl("https://twitter.com/home");
+            myWebView.loadUrl("https://www.nationalww2museum.org/students-teachers/student-resources");
             WebSettings webSettings = myWebView.getSettings();
 
             Log.d("==>","Will display external web page");
